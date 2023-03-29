@@ -1,3 +1,8 @@
+"""
+The module for streamlit dashboard.
+Author: Amer Ahmed
+Version 0.0
+"""
 import json
 import time
 
@@ -12,6 +17,8 @@ from streamlit_tags import st_tags
 
 
 def display_scraper_result():
+    """Display the results of a streamlit dashboard"""
+
     st.title(':bar_chart: Analysis Visualizer')
     df = pd.read_csv('./src/AdScrapeResult.csv')
 
@@ -72,6 +79,7 @@ def display_scraper_result():
 
 # Generate Keyword Ads Appearance Percentage
 def generate_keyword_ad_percentage(df):
+    """Generate keyword ads appearance percentage"""
     keyword_ad_percentage = []
     for keyword in df['Keyword'].unique().tolist():
         if df[df['Keyword'] == keyword]['Keyword Ads Percentage(%)'].max() is None:
@@ -88,6 +96,7 @@ def generate_keyword_ad_percentage(df):
 
 
 def ad_scraper(number_of_times, list_of_keywords):
+    """Returns a list of keywords ads for a given number of times"""
     # Specify User Agent
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Safari/537.36",
@@ -194,9 +203,6 @@ def ad_scraper(number_of_times, list_of_keywords):
                                  * number_of_times))
                     my_bar.progress(round(progress, 1))
 
-                # with open("output.html", "w") as file:
-                    # file.write(str(soup))
-
         keys = list(result_dict[keyword].keys())
         for name in ['bottom', 'top', 'absolute-top']:
             keys.sort(
@@ -213,6 +219,7 @@ def ad_scraper(number_of_times, list_of_keywords):
 
 
 def json_to_data_frame(result_dict, list_of_keywords):
+    """Converts a list of keywords to a json object with dataframe representation"""
     result_list = []
     for keyword in list_of_keywords:
         if result_dict[keyword]["top performers"] != []:
