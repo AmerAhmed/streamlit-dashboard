@@ -1,48 +1,73 @@
 Keyword,Company,absolute-top,top,bottom,top(%),bottom(%),Keyword Ads Percentage(%)
-UnoFinans,no › lån-med › sikkerhet,9,1,0,100.0,0.0,50.0
-UnoFinans,forbrukslån-listen,1,7,0,80.0,0.0,50.0
-UnoFinans,motty,0,5,0,50.0,0.0,50.0
+UnoFinans,no › lån-med › sikkerhet,8,2,0,100.0,0.0,50.0
+UnoFinans,forbrukslån-listen,2,6,0,80.0,0.0,50.0
+UnoFinans,motty,0,10,0,100.0,0.0,50.0
 UnoFinans,swiftbanker,0,2,0,20.0,0.0,50.0
 Okida,okida,10,0,0,100.0,0.0,55.0
 Okida,no › lån-med › sikkerhet,0,10,0,100.0,0.0,55.0
-Okida,finanseiendom,0,3,0,30.0,0.0,55.0
-Okida,zenfinans,0,1,0,10.0,0.0,55.0
-Okida,refinansiering,0,0,1,0.0,100.0,55.0
-ZenFinans,zenfinans,10,0,0,100.0,0.0,55.0
-ZenFinans,refinansiering,0,8,1,80.0,100.0,55.0
-ZenFinans,finanseiendom,0,8,1,80.0,100.0,55.0
-ZenFinans,norgeslanet,0,1,1,10.0,100.0,55.0
+Okida,finanseiendom,0,4,1,40.0,100.0,55.0
+ZenFinans,zenfinans,10,0,0,100.0,0.0,50.0
+ZenFinans,refinansiering,0,6,0,60.0,0.0,50.0
+ZenFinans,finanseiendom,0,5,0,50.0,0.0,50.0
+ZenFinans,norgeslanet,0,4,0,40.0,0.0,50.0
 My Bank ASA,,0,0,0,0.0,0.0,0.0
 Odontia,,0,0,0,0.0,0.0,0.0
 Vende Finans AS,,0,0,0,0.0,0.0,0.0
 Mileni,,0,0,0,0.0,0.0,0.0
 Finepart,,0,0,0,0.0,0.0,0.0
-MER Finans,,0,0,0,0.0,0.0,0.0
+MER Finans,zmarta,0,0,1,0.0,100.0,5.0
 Balder AB,,0,0,0,0.0,0.0,0.0
 Digtective,,0,0,0,0.0,0.0,0.0
 Google,,0,0,0,0.0,0.0,0.0
-Nyhetebrev,mailchimp,6,4,0,100.0,0.0,90.0
-Nyhetebrev,com › nyhetsbrev › skapa,4,4,0,80.0,0.0,90.0
-Nyhetebrev,se › nyhetsbrev › system,0,2,6,20.0,75.0,90.0
-Nyhetebrev,com › nyhetsbrev,0,2,1,20.0,12.5,90.0
-Nyhetebrev,paloma,0,0,4,0.0,50.0,90.0
-Nyhetebrev,apsis,0,0,2,0.0,25.0,90.0
-Nyhetebrev,se › mailverktyg,0,0,1,0.0,12.5,90.0
-Lånekalkulator.no,santanderconsumer,4,0,0,80.0,0.0,25.0
-Lånekalkulator.no,ordnabolan,1,0,0,20.0,0.0,25.0
-Lånekalkulator.no,ikanobank,0,2,0,40.0,0.0,25.0
-Lånekalkulator.no,bluestep,0,1,0,20.0,0.0,25.0
-Norsk Refinansiering,norskrefinansiering,10,0,0,100.0,0.0,55.0
-Norsk Refinansiering,banknorwegian,0,7,0,70.0,0.0,55.0
-Norsk Refinansiering,forbrukslån-listen,0,3,0,30.0,0.0,55.0
-Norsk Refinansiering,se › refinansiering,0,3,0,30.0,0.0,55.0
-Norsk Refinansiering,refinansiering,0,2,1,20.0,100.0,55.0
-Norsk Refinansiering,norgeslanet,0,1,1,10.0,100.0,55.0
-Norsk Refinansiering,ikanobank,0,1,1,10.0,100.0,55.0
-Norsk Refinansiering,org › forbrukslån › kredittkort,0,1,0,10.0,0.0,55.0
-Norsk Refinansiering,no › refinansiering,0,1,0,10.0,0.0,55.0
-Norsk Refinansiering,zmarta,0,1,0,10.0,0.0,55.0
-Capital Box Finland,se › företagslån,9,0,0,90.0,0.0,50.0
-Capital Box Finland,capitalbox,1,0,0,10.0,0.0,50.0
+Nyhetebrev,com › nyhetsbrev › skapa,7,1,0,80.0,0.0,90.0
+Nyhetebrev,mailchimp,2,8,0,100.0,0.0,90.0
+Nyhetebrev,com › nyhetsbrev,1,1,1,20.0,12.5,90.0
+Nyhetebrev,se › nyhetsbrev › system,0,1,7,10.0,87.5,90.0
+Nyhetebrev,apsis,0,0,5,0.0,62.5,90.0
+Nyhetebrev,se › mailverktyg,0,0,3,0.0,37.5,90.0
+Nyhetebrev,paloma,0,0,3,0.0,37.5,90.0
+Lånekalkulator.no,santanderconsumer,3,0,0,100.0,0.0,15.0
+Lånekalkulator.no,ikanobank,0,3,0,100.0,0.0,15.0
+Lånekalkulator.no,bluestep,0,1,0,33.3,0.0,15.0
+Norsk Refinansiering,norskrefinansiering,10,0,0,100.0,0.0,60.0
+Norsk Refinansiering,banknorwegian,0,9,0,90.0,0.0,60.0
+Norsk Refinansiering,se › refinansiering,0,5,0,50.0,0.0,60.0
+Norsk Refinansiering,ikanobank,0,3,0,30.0,0.0,60.0
+Norsk Refinansiering,refinansiering,0,2,0,20.0,0.0,60.0
+Norsk Refinansiering,zmarta,0,1,0,10.0,0.0,60.0
+Norsk Refinansiering,forbrukslån-listen,0,0,1,0.0,50.0,60.0
+Norsk Refinansiering,norgeslanet,0,0,1,0.0,50.0,60.0
+Norsk Refinansiering,kredittium,0,0,1,0.0,50.0,60.0
+Capital Box Finland,se › företagslån,8,0,0,80.0,0.0,50.0
+Capital Box Finland,capitalbox,2,0,0,20.0,0.0,50.0
 Ai Finans,,0,0,0,0.0,0.0,0.0
 Direct,,0,0,0,0.0,0.0,0.0
+Mellomfinansiering,bluestep,0,0,1,0.0,100.0,5.0
+Refinansiering,sambla,8,2,0,100.0,0.0,85.0
+Refinansiering,zmarta,2,7,1,90.0,14.3,85.0
+Refinansiering,com › refinansiera,0,4,5,40.0,71.4,85.0
+Refinansiering,bluestep,0,3,4,30.0,57.1,85.0
+Refinansiering,anyfin,0,1,0,10.0,0.0,85.0
+Refinansiering,se › finansiering › lån,0,0,3,0.0,42.9,85.0
+Refinansiering,se › refinansiering,0,0,1,0.0,14.3,85.0
+Boliglån,ikanobank,8,1,0,90.0,0.0,100.0
+Boliglån,lendo,1,1,4,20.0,40.0,100.0
+Boliglån,se › ikano › lån,1,0,0,10.0,0.0,100.0
+Boliglån,bluestep,0,4,6,40.0,60.0,100.0
+Boliglån,ordnabolan,0,4,6,40.0,60.0,100.0
+Boliglån,se › privatlan,0,0,2,0.0,20.0,100.0
+Boliglån,se › låna-pengar,0,0,1,0.0,10.0,100.0
+Eiendomsfinans Brand,,0,0,0,0.0,0.0,0.0
+Huslån,bluestep,6,2,2,80.0,20.0,100.0
+Huslån,danskebank,4,5,1,90.0,10.0,100.0
+Huslån,lendo,0,4,4,40.0,40.0,100.0
+Huslån,se › bolån,0,2,5,20.0,50.0,100.0
+Huslån,se › flytta › bolån,0,1,1,10.0,10.0,100.0
+Huslån,ordnabolan,0,0,7,0.0,70.0,100.0
+Huslån,nordax,0,0,4,0.0,40.0,100.0
+Huslån,se › jämför › bolån,0,0,3,0.0,30.0,100.0
+Huslån,com › lån,0,0,1,0.0,10.0,100.0
+Huslån,compricer,0,0,1,0.0,10.0,100.0
+Huslån,lansforsakringar,0,0,1,0.0,10.0,100.0
+Lønnstrekk,,0,0,0,0.0,0.0,0.0
+Betalingsanmerkning,,0,0,0,0.0,0.0,0.0

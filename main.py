@@ -264,9 +264,11 @@ number_of_times = st.slider(
 
 # List of keywords that should be scraped
 list_of_keywords = ["UnoFinans", "Okida", "ZenFinans",
-                    "My Bank ASA", "Odontia", "Vende Finans AS", "Mileni", "Finepart",
-                    "MER Finans", "Balder AB", "Digtective", "Google", "Nyhetebrev", "Lånekalkulator.no", "Norsk Refinansiering",
-                    "Capital Box Finland", "Ai Finans", "Direct"]
+                    "My Bank ASA", "Odontia", "Vende Finans AS",
+                    "Mileni", "Finepart", "MER Finans", "Balder AB", "Digtective",
+                    "Google", "Nyhetebrev", "Lånekalkulator.no", "Norsk Refinansiering", "Capital Box Finland", "Ai Finans", "Direct",  "Mellomfinansiering", "Refinansiering", "Boliglån", "Eiendomsfinans Brand", "Huslån", "Lønnstrekk",
+                    "Betalingsanmerkning",
+                    ]
 
 # Define columns for each keyword
 col1, col2 = st.columns(2)
