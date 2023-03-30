@@ -10,7 +10,6 @@
 👯 I’m looking to collaborate with other content creators
 🥅 2021 Goals: Contribute more to Open Source projects.
 ```
-📫 How to reach me at: https://www.linkedin.com/in/amer-a-334948a8/
 
 > Install python3 in your system
 
@@ -33,3 +32,7 @@
 > Run the main.py
 
 ```streamlit run main.py```
+
+
+
+📫 How to reach me at: https://www.linkedin.com/in/amer-a-334948a8/
