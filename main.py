@@ -18,7 +18,6 @@ from streamlit_tags import st_tags
 
 def display_scraper_result():
     """Display the results of a streamlit dashboard"""
-
     st.title(':bar_chart: Analysis Visualizer')
     df = pd.read_csv('./src/ad_scrape_result.csv')
 
