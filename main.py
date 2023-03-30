@@ -53,7 +53,7 @@ def display_scraper_result():
 
     company_list = []
     company_count = []
-    for key, item in test_df:
+    for key, _ in test_df:
         company_list.append(key)
         company_count.append(len(test_df.get_group(key)))
 
@@ -303,7 +303,7 @@ if submitted:
 
 @st.cache
 def convert_df(df):
-    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    """IMPORTANT: Cache the conversion to prevent computation on every rerun"""
     return df.to_csv("./src/ad_scrape_result.csv").encode('utf-8')
 
 
@@ -315,6 +315,8 @@ st.download_button(
     file_name='./src/ad_scrape_result.csv',
     mime='text/csv',
 )
+
+
 display_result = st.button("Display Result")
 if display_result:
     display_scraper_result()
