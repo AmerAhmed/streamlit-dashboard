@@ -263,11 +263,10 @@ number_of_times = st.slider(
     'How many times do you want this keyword scraping to be run?', 1, 100, 10)
 
 # List of keywords that should be scraped
-list_of_keywords = ["Direct", "Betalingsanmerkninger",
-                    "Betalingsanmerkning 2020", "Lånerådgiver", "Website traffic-pusse opp", "Hjelp til å rydde opp i gjeld", "Boliglånskalkulator",
-                    "Nettstedtrafikk – Banner – betalingsanmerkninger", "Spesiallån", "slette betalingsanmerkning ads", "Omstartslån", "Skattemelding for 2020", "Skattemelding for 2021", "Skattemelding for 2022", "Skattemelding for 2023", "Skattemelding for 2024", "Skattemelding for 2025", "Skattemelding for 2026", "Skattemelding for 2027", "Skattemelding for 2028", "Skattemelding for 2029", "Skattemelding for 2030", "Skattemelding for 2031", "Skattemelding for 2020_Insta", "God påske 2021", "Nordax", "Stoppe tvangssalg", "Stoppe tvangssalg", "Oslo", "Lillestrøm", "Bergen", "Gjøvik",
-                    "Ski", "Trondheim", "Harstad", "Stavanger", "Drammen", "Spørsmål", "Display-branding", "Mellomfinansiering", "Refinansiering", "Boliglån", "Eiendomsfinans Brand", "Huslån", "Lønnstrekk", "Betalingsanmerkning"
-                    ]
+list_of_keywords = ["UnoFinans", "Okida", "ZenFinans",
+                    "My Bank ASA", "Odontia", "Vende Finans AS", "Mileni", "Finepart",
+                    "MER Finans", "Balder AB", "Digtective", "Google", "Nyhetebrev", "Lånekalkulator.no", "Norsk Refinansiering",
+                    "Capital Box Finland", "Ai Finans", "Direct"]
 
 # Define columns for each keyword
 col1, col2 = st.columns(2)
@@ -276,12 +275,7 @@ with col1:
         label='Add Keywords here!',
         text='Press enter to add more',
         value=list_of_keywords,
-        suggestions=["Google", "Direct",
-                     "Privatmegleren", "GoodCash", "UnoFinans", "Okida", "ZenFinans",
-                     "My Bank ASA", "Odontia", "Vende Finans AS", "Mileni", "Finepart",
-                     "MER Finans", "Balder AB", "Digtective", "Google", "Nyhetebrev", "Lånekalkulator.no", "Norsk Refinansiering",
-                     "Capital Box Finland", "Ai Finans"
-                     ],
+        suggestions=["Google", "ZenFinans", "Privatmegleren", "GoodCash"],
         maxtags=100,
         key="aljnf"
     )
@@ -298,23 +292,7 @@ if submitted:
 
     result_dict = ad_scraper(number_of_times, chosen_keywords)
     raw_output = json_to_data_frame(result_dict, chosen_keywords)
-    # raw_output.to_csv('./src/ad_scrape_result.csv', index=False)
-
-
-@st.cache
-def convert_df(df):
-    """IMPORTANT: Cache the conversion to prevent computation on every rerun"""
-    return df.to_csv("./src/ad_scrape_result.csv").encode('utf-8')
-
-
-csv = convert_df(raw_output)
-
-st.download_button(
-    label="Download data as CSV",
-    data=csv,
-    file_name='./src/ad_scrape_result.csv',
-    mime='text/csv',
-)
+    raw_output.to_csv('./src/ad_scrape_result.csv', index=False)
 
 
 display_result = st.button("Display Result")
