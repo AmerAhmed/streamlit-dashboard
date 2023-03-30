@@ -20,7 +20,7 @@ def display_scraper_result():
     """Display the results of a streamlit dashboard"""
 
     st.title(':bar_chart: Analysis Visualizer')
-    df = pd.read_csv('./src/AdScrapeResult.csv')
+    df = pd.read_csv('AdScrapeResult.csv')
 
     keywords = df['Keyword'].unique().tolist()
     keyword_selection = st.multiselect('Keyword:', keywords, default=keywords)
@@ -99,9 +99,9 @@ def ad_scraper(number_of_times, list_of_keywords):
     """Returns a list of keywords ads for a given number of times"""
     # Specify User Agent
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.78",
+        "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Safari/537.36"
     }
-
     # progress bar for scraping
     st.subheader('Progress:')
     my_bar = st.progress(0)
@@ -298,7 +298,7 @@ if submitted:
 
     result_dict = ad_scraper(number_of_times, chosen_keywords)
     raw_output = json_to_data_frame(result_dict, chosen_keywords)
-    raw_output.to_csv('./src/AdScrapeResult.csv', index=False)
+    raw_output.to_csv('AdScrapeResult.csv', index=False)
 
 display_result = st.button("Display Result")
 if display_result:
