@@ -20,7 +20,7 @@ def display_scraper_result():
     """Display the results of a streamlit dashboard"""
 
     st.title(':bar_chart: Analysis Visualizer')
-    df = pd.read_csv('AdScrapeResult.csv')
+    df = pd.read_csv('./src/ad_scrape_result.csv')
 
     keywords = df['Keyword'].unique().tolist()
     keyword_selection = st.multiselect('Keyword:', keywords, default=keywords)
@@ -298,8 +298,23 @@ if submitted:
 
     result_dict = ad_scraper(number_of_times, chosen_keywords)
     raw_output = json_to_data_frame(result_dict, chosen_keywords)
-    raw_output.to_csv('AdScrapeResult.csv', index=False)
+    # raw_output.to_csv('./src/ad_scrape_result.csv', index=False)
 
+
+@st.cache
+def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_csv("./src/ad_scrape_result.csv").encode('utf-8')
+
+
+csv = convert_df(raw_output)
+
+st.download_button(
+    label="Download data as CSV",
+    data=csv,
+    file_name='./src/ad_scrape_result.csv',
+    mime='text/csv',
+)
 display_result = st.button("Display Result")
 if display_result:
     display_scraper_result()
